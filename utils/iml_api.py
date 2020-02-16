@@ -55,6 +55,7 @@ def iml_check_balance(dt=None, login='', pwd=''):
         res.append({
             'sim_type': re.findall(pattern, rest)[0],
             'iml_balance': re.findall(pattern2, rest)[0],
+            'dt': dt,
         })
 
     return res
