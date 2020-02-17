@@ -26,6 +26,8 @@ def load_addresses_geo():
     adrs = []
     with open(r'D:\projects\TGBot_Klepa_Two\utils\AddressBook.csv', 'r', encoding='utf-8') as f:
         for line in f.readlines()[1:]:
+            if not line or line == '\n':
+                continue
             adr = line.split(';')
             # adr[0] = int(adr[0])
             if adr[2] == '""' or not adr[2] or adr[2] == '0':
