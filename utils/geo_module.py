@@ -1,10 +1,8 @@
 import requests
-# from ..config import YA_KEY
+from ..config import YA_KEY
 
 
 BASE_URL = r'https://geocode-maps.yandex.ru/1.x/'
-YA_KEY = '9e7f87dc-438e-4ccc-bddc-dfc7566a92f0'
-
 
 
 def get_geo_coordinates(adr):
